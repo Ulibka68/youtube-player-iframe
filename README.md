@@ -87,7 +87,7 @@ npm i --save ../react-component-library
 
 Эта команда установит локальный компонент в качестве зависимости для `test-app`. Компонент также появится в виде зависимости в `package.json` например:
 
-```JSON
+``` JSON
   ...
   "dependencies": {
     ...
@@ -99,9 +99,7 @@ npm i --save ../react-component-library
 
 Дальше Вы можете импортировать его как и с обычной библотекой.
 
-## Публикация
-
-### Hosting via NPM
+## Публикация на NPM
 
 Сперва убедитесь что у Вас есть аккаунт NPM [также Вы должны залогиниться в NPM используя команду `npm login`.](https://docs.npmjs.com/creating-a-new-npm-user-account)
 
@@ -111,9 +109,11 @@ npm i --save ../react-component-library
 npm publish
 ```
 
+По неизвестной причине при публикации npm мне постоянно выдает ошибку - что такая версия уже существует на npm - но пакет все равно публикуется
+
 Скрипт `"prepublishOnly": "npm run build"` в `package.json` будет выполнен перед публикацией, обеспечивая компиляцию библотеки в директорию `build/`.
 
-#### Emotion версии 11
+## Emotion версии 11
 
 В данный пакет уже включена поддержка Emotion версии 11
 
@@ -145,7 +145,7 @@ I've found that it's helpful to export SASS variables to projects consuming the 
 
 For example, let's say you installed `harvey-component-library` into your project. To use the exported variables/mixins, in a SASS file you would do the following:
 
-```Sass
+``` Sass
 @import '~harvey-component-library/build/typography';
 
 .example-container {
