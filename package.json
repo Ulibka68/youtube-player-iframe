@@ -15,7 +15,7 @@
     "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
     "generate": "node ./util/create-component component-name",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly1": "npm run build",
     "rimraf": "rimraf ./build",
     "publish": "npm publish --access public"
   },

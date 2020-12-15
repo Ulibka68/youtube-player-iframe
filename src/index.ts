@@ -1,3 +1,3 @@
-import {VideoBoxFin} from "./YoutubePlayer";
+import { VideoBoxFin } from "./YoutubePlayer/YoutubePlayer";
 
 export { VideoBoxFin };
